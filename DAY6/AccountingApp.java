@@ -1,0 +1,19 @@
+public class AccountingApp {
+	
+	// 공급가
+	public static double valueOfSupply  = 1000.0;
+	
+	// 부가가치세율
+	public static double vatRate = 0.1;
+	
+	public static double getVAT() {
+		return valueOfSupply * vatRate;
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Value of supply : " + valueOfSupply);
+		System.out.println("VAT :" + getVAT());
+		
+	}
+}
